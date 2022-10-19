@@ -1,3 +1,5 @@
+// UTS PBO - Nico Abel Laia (20215520010) - TI Semester 3 2022
+
 import java.util.Scanner;
 
 public class App {
@@ -28,11 +30,10 @@ public class App {
             Admin ad = new Admin();
             System.out.print("Program Input Data Dealer Motor | ");
             ad.waktu();
-            System.out.println("1.Masukkan Data\n2. Cek Daftar\n3. Komparasi Kendaraan\n4. Ubah Data Kendaraan\n5. Data Perusahaan");
+            System.out.println("1. Masukkan Data\n2. Cek Daftar\n3. Komparasi Kendaraan\n4. Ubah Data Kendaraan\n5. Data Perusahaan\n6. Exit");
 
             System.out.print("Pilihan Anda: ");
             int inputUser = input.nextInt();
-            System.out.println("Input User:  " + inputUser);
             switch (inputUser) {
 
                 // Input Data
@@ -79,9 +80,7 @@ public class App {
                                 main[i] = di;
                             }
                         } else {
-                            System.out.println("Masukk COba");
                             for (int i = 0; i < inputNew; i++) {
-                                System.out.println("Masukk ni");
                                 Dealer di = new Dealer();
                                 di.setNamaMotor();
                                 di.setBrandMotor();
@@ -243,6 +242,12 @@ public class App {
                     System.out.print("Press Any Key To Continue...");
                     new java.util.Scanner(System.in).nextLine();
 
+                    break;
+
+                case 6:
+                    back = 0;
+                    // Clear terminal
+                    System.out.print("\033\143");
                     break;
             
                 default:

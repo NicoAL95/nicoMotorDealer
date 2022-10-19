@@ -19,11 +19,6 @@ public class Dealer {
         return this.harga;
     }
 
-    public String setSpace(){
-        this.nama = ""; 
-        return this.nama;
-    }
-
     public void setNamaMotor(){
         System.out.print("Nama Motor: ");
         this.nama = inputDataDealer.nextLine();
@@ -41,6 +36,10 @@ public class Dealer {
     public void setHargaMotor(){
         System.out.print("Harga Motor: ");
         this.harga = inputDataDealer.nextInt();
+    }
+
+    public String setWaktu(){
+        return "Waktu tidak direkam";
     }
 
     public void setWaktu(String inp){
